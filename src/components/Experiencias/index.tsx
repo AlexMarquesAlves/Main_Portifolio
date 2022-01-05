@@ -1,9 +1,11 @@
+import SectionTitle from '../SectionTitle';
 import { Container } from './styles';
 
 function Experiencias() {
   return (
     <Container>
-      <h1>Experiencias</h1>
+      <SectionTitle title="01 Ano" description="de experiência" />
+      <section />
     </Container>
   );
 }
