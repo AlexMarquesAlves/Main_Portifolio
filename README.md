@@ -12,6 +12,7 @@
 - [x] componente FormContato
 - [x] componente Footer
 - [x] Rota para projetos
+- [ ] componente BannerProjeto
 - [ ] Página de Projeto único
 ... 
 - [ ] Deploy
