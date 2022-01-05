@@ -15,7 +15,13 @@ export default function ProjetoUnico() {
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
           facere ipsa ut aut maiores dolore quidem veritatis culpa rem fugit?
-          Culpa, omnis non. At corporis earum quam, qui excepturi ea?
+          Culpa, omnis non. At corporis earum quam, qui excepturi ea? Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Magni, facere ipsa
+          ut aut maiores dolore quidem veritatis culpa rem fugit? Culpa, omnis
+          non. At corporis earum quam, qui excepturi ea? Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Magni, facere ipsa ut aut maiores
+          dolore quidem veritatis culpa rem fugit? Culpa, omnis non. At corporis
+          earum quam, qui excepturi ea?
         </p>
         <button type="button">
           <a href="#">Ver Projeto online</a>
