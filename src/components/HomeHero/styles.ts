@@ -9,7 +9,7 @@ export const Container = styled.section`
   margin-top: 5rem;
 
   > img {
-    border-radius: 20%;
+    border-radius: 3.5rem;
     width: 40rem;
     flex: 1;
   }

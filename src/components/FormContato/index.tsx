@@ -1,3 +1,4 @@
+import Form from '../Form';
 import SectionTitle from '../SectionTitle';
 import { Container } from './styles';
 
@@ -16,7 +17,15 @@ function FormContato() {
             meus serviços
           </>
         }
+        description={
+          <>
+            Preencha o formulário abaixo que
+            <br />
+            irei retornar em breve
+          </>
+        }
       />
+      <Form />
     </Container>
   );
 }

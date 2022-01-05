@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
-
+export const Container = styled.section`
+  ${({ theme }) => css``}
 `;
