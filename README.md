@@ -12,7 +12,10 @@
 - [x] componente FormContato
 - [x] componente Footer
 - [x] Rota para projetos
-- [ ] componente BannerProjeto
-- [ ] Página de Projeto único
-... 
+- [x] componente BannerProjeto
+- [x] Página de Projeto único
+- [ ] Integrar o Prismic CMS em todas as páginas
+- [ ] ...
+- [ ] ..
+- [ ] ...
 - [ ] Deploy
