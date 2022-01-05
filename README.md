@@ -2,15 +2,16 @@
 
 ## Under development
 
-- [ ] Components Header & NavLink
-- [ ] Componente HomeHero da Página
-- [ ] Componente Experiencias
-- [ ] Componente SectionTitle
-- [ ] Componente ExperienciaItem
-- [ ] Componentes Projetos e ProjetosItem
-- [ ] componente Conhecimentos
-- [ ] componente FormContato
-- [ ] componente Footer
-- [ ] Rota para projetos
+- [x] Components Header & NavLink
+- [x] Componente HomeHero da Página
+- [x] Componente Experiencias
+- [x] Componente SectionTitle
+- [x] Componente ExperienciaItem
+- [x] Componentes Projetos e ProjetosItem
+- [x] componente Conhecimentos
+- [x] componente FormContato
+- [x] componente Footer
+- [x] Rota para projetos
+- [ ] Página de Projeto único
 ... 
 - [ ] Deploy
