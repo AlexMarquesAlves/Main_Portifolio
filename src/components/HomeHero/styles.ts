@@ -10,9 +10,9 @@ export const Container = styled.section`
 
   > img {
     border-radius: 50%;
-    width: 40rem;
-    height: auto;
+    width: 45rem;
     flex: 1;
+    max-width: none;
   }
 
   > div {

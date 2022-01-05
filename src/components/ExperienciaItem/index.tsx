@@ -1,17 +1,20 @@
-import { ReactNode } from 'react';
+import { ItemContainer } from './styles';
 
-import { Container } from './styles';
-
-interface ExperienciaItemProps {
-  children: ReactNode;
+interface ExperienciaProps {
+  year: string;
+  title: string;
+  description: string;
 }
 
-function ExperienciaItem({ children }: ExperienciaItemProps) {
+function ExperienciaItem({ year, title, description }: ExperienciaProps) {
   return (
-    <Container>
-      <h1>ExperienciaItem</h1>
-      {children}
-    </Container>
+    <ItemContainer>
+      <div>
+        <h1>{year}</h1>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+    </ItemContainer>
   );
 }
 
