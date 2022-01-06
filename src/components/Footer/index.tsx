@@ -19,9 +19,6 @@ function Footer() {
   return (
     <Container>
       <div className="container">
-        <button type="button" onClick={handleScrollTop}>
-          Voltar ao topo
-        </button>
         <section>
           <AiOutlineTwitter
             onClick={() => handleRedirect('https://twitter.com')}
@@ -33,6 +30,9 @@ function Footer() {
             onClick={() => handleRedirect('https://linkedin.com')}
           />
         </section>
+        <button type="button" onClick={handleScrollTop}>
+          Voltar ao topo
+        </button>
       </div>
     </Container>
   );
