@@ -8,7 +8,7 @@ function HomeHero() {
       <img src={picture} alt="Minha foto" />
       <div>
         <TextContainer>
-          <h1>Olá!</h1>
+          <h1>Olá</h1>
           <h2>Chamo-me Duque</h2>
         </TextContainer>
         <InfosContainer>
@@ -16,7 +16,7 @@ function HomeHero() {
             <span className="comment">//Minha apresentação</span>
             <span className="purple">Infos</span> {'\u007B'}
             <div>
-              Nome: <span className="blue">Atanael Leonardo</span>
+              Nome: <span className="blue">Atanael Leonardo,</span>
             </div>
             <div>
               Sobrenome: <span className="blue">Xavier Marques Alves</span>

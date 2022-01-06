@@ -26,10 +26,17 @@ export default function Projeto({ projeto }: ProjetoProps) {
   if (router.isFallback) {
     return <LoadingScreen />;
   }
+
   return (
     <ProjetoContainer>
       <Head>
         <title>{projeto.title} | Meu portfólio</title>
+        <meta name="description" content={projeto.description} />
+        <meta property="og:image" content={projeto.thumbnail} />
+        <meta property="og:image:secure_url" content={projeto.thumbnail} />
+        <meta name="twitter:image" content={projeto.thumbnail} />
+        <meta name="twitter:image:src" content={projeto.thumbnail} />
+        <meta property="og:description" content={projeto.description} />
       </Head>
 
       <Header />
@@ -38,6 +45,7 @@ export default function Projeto({ projeto }: ProjetoProps) {
         type={projeto.type}
         imgUrl={projeto.thumbnail}
       />
+
       <main>
         <p>{projeto.description}</p>
         <button type="button">
@@ -51,7 +59,7 @@ export default function Projeto({ projeto }: ProjetoProps) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const prismic = getPrismicClient();
   const projetos = await prismic.query([
-    Prismic.Predicates.at('document.type', 'projeto')
+    Prismic.predicates.at('document.type', 'projeto')
   ]);
 
   const paths = projetos.results.map(projeto => ({

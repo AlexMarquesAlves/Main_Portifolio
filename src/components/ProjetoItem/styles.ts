@@ -19,6 +19,7 @@ export const Container = styled.div<ContainerProps>`
     border: 1px solid ${({ theme }) => theme.border};
     transition: 0.5s;
     cursor: pointer;
+    overflow: hidden;
 
     &:hover {
       border-color: ${({ theme }) => theme.primary};
@@ -43,12 +44,10 @@ export const Container = styled.div<ContainerProps>`
 
     > div.overlay {
       position: absolute;
+      left: 0;
+      bottom: 0;
       width: 100%;
       height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
       background: ${({ theme }) => theme.gradient};
       opacity: 0.7;
       transition: 0.5s;
