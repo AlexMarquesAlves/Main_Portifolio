@@ -1,10 +1,6 @@
-import Form from '../Form';
 import SectionTitle from '../SectionTitle';
+import Form from './Form';
 import { Container } from './styles';
-
-// interface FormContatoProps {
-//   children: ReactNode;
-// }
 
 function FormContato() {
   return (
@@ -14,7 +10,7 @@ function FormContato() {
           <>
             Precisa dos
             <br />
-            meus serviços
+            meus serviços?
           </>
         }
         description={
@@ -25,6 +21,7 @@ function FormContato() {
           </>
         }
       />
+
       <Form />
     </Container>
   );

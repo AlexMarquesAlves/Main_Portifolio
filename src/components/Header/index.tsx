@@ -1,4 +1,4 @@
-import NavLink from '../NavLink';
+import NavLink from './NavLink';
 import { Container } from './styles';
 
 function Header() {

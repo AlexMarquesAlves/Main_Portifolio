@@ -1,5 +1,5 @@
-import ExperienciaItem from '../ExperienciaItem';
 import SectionTitle from '../SectionTitle';
+import ExperienciaItem from './ExperienciaItem';
 import { Container } from './styles';
 
 function Experiencias() {
@@ -8,24 +8,30 @@ function Experiencias() {
       <SectionTitle title="01 Ano" description="de experiência" />
       <section>
         <ExperienciaItem
-          title="Dev Front-end"
-          year="2018"
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam,"
-        />
-        <ExperienciaItem
-          title="Dev Front-end"
-          year="2019"
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam,"
-        />
-        <ExperienciaItem
-          title="Dev Front-end"
-          year="2020"
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam,"
-        />
-        <ExperienciaItem
-          title="Dev Front-end"
           year="2021"
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam,"
+          title="HTML 5"
+          description="Sólidos conhecimentos de estruturação, conhecimento de todas as tags"
+        />
+        <ExperienciaItem
+          year="2021"
+          title="CSS 3"
+          description="Sólidos conhecimentos e estilização, experiencia com pre-processadores
+          (Sass, Scss)"
+        />
+        <ExperienciaItem
+          year="2021"
+          title="Bootstrap"
+          description="Sólidos conhecimentos e familiaridade com o framework"
+        />
+        <ExperienciaItem
+          year="2021"
+          title="JavaScript"
+          description="Conhecimento intermediário da linguagem, entretanto estudado cada vez mais"
+        />
+        <ExperienciaItem
+          year="2021"
+          title="React.js"
+          description="Conhecimento intermediário do framework, e aprendendo a cada dia"
         />
       </section>
     </Container>

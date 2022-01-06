@@ -1,24 +1,23 @@
 import { lighten } from 'polished';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 interface NavLinkProps {
   isActive: boolean;
 }
 
 export const Container = styled.header`
-  ${({ theme }) => css`
   width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    border-bottom: 1px solid ${theme.backgroundLight}};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  border-bottom: 1px solid ${({ theme }) => theme.backgroundLight};
 
-    ul {
+  ul {
     display: flex;
     gap: 2rem;
     align-items: center;
-  `}
+  }
 `;
 
 export const NavLinkContainer = styled.li<NavLinkProps>`
