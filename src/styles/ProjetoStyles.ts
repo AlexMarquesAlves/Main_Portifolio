@@ -1,5 +1,5 @@
 import { darken } from 'polished';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const ProjetoContainer = styled.div`
   display: flex;
@@ -12,17 +12,16 @@ export const ProjetoContainer = styled.div`
     margin-bottom: 2rem;
     width: 100%;
     padding: 0 5rem;
-  }
-  ${({ theme }) => css`
+
     p {
-      color: ${theme.textLight};
+      color: ${({ theme }) => theme.textLight};
       font-size: 1.5rem;
       font-weight: 300;
       text-align: justify;
     }
 
     button {
-      background: ${theme.primary};
+      background: ${({ theme }) => theme.primary};
       padding: 0.8rem 3rem;
       border-radius: 0.5rem;
       border: none;
@@ -30,11 +29,11 @@ export const ProjetoContainer = styled.div`
       margin-top: 2rem;
 
       &:hover {
-        background: ${darken(0.05, theme.primary)};
+        background: ${({ theme }) => darken(0.05, theme.primary)};
       }
 
       a {
-        color: ${theme.white};
+        color: #fff;
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 300;
@@ -56,5 +55,5 @@ export const ProjetoContainer = styled.div`
         }
       }
     }
-  `}
+  }
 `;

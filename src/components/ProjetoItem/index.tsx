@@ -1,33 +1,26 @@
 import Link from 'next/link';
-import { AiOutlineRightCircle } from 'react-icons/ai';
-import { ProjetoContainer } from './styles';
+import { Container } from './styles';
 
-interface ProjetoProps {
+interface ProjetoItemProps {
   title: string;
   type: string;
+  imgUrl: string;
   slug: string;
-  img: string;
 }
 
-function ProjetoItem({ title, type, slug, img }: ProjetoProps) {
+function ProjetoItem({ title, type, imgUrl, slug }: ProjetoItemProps) {
   return (
-    <ProjetoContainer imgUrl={img}>
-      <section>
-        <div className="overlay" />
-        <div className="text">
-          <h1>{title}</h1>
-          <h2>- {type}</h2>
-        </div>
-      </section>
-
-      <button type="button">
-        <Link href={`/projetos/${slug}`}>
-          <a>
-            Ver mais <AiOutlineRightCircle />
-          </a>
-        </Link>
-      </button>
-    </ProjetoContainer>
+    <Container imgUrl={imgUrl}>
+      <Link href={`/projetos/${slug}`}>
+        <a>
+          <div className="overlay" />
+          <section>
+            <h1>{title}</h1>
+            <h2>{type}</h2>
+          </section>
+        </a>
+      </Link>
+    </Container>
   );
 }
 

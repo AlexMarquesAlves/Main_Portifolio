@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProjetoContainer = styled.div`
+export const ProjetosContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -18,7 +18,7 @@ export const ProjetoContainer = styled.div`
       grid-template-columns: 1fr 1fr;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
       grid-template-columns: 1fr;
     }
   }
