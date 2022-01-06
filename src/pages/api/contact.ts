@@ -5,6 +5,7 @@ import { google } from 'googleapis';
 const { OAuth2 } = google.auth;
 
 const email = process.env.MAILADRESS;
+const emailPass = process.env.MAILPASS;
 
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
@@ -16,10 +17,13 @@ OAuth2_client.setCredentials({ refresh_token: refreshToken });
 const accessToken = OAuth2_client.getAccessToken();
 
 const transporter = nodemailer.createTransport({
+  host: '',
+  port: '',
   service: 'gmail',
   auth: {
     type: 'OAuth2',
     user: email,
+    pass: emailPass,
     clientId,
     clientSecret,
     refreshToken,

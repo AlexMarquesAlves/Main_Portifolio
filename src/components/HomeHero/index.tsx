@@ -8,8 +8,8 @@ function HomeHero() {
       <img src={picture} alt="Minha foto" />
       <div>
         <TextContainer>
-          <h1>Olá</h1>
-          <h2>Me chamo Duque</h2>
+          <h1>Olá!</h1>
+          <h2>Chamo-me Duque</h2>
         </TextContainer>
         <InfosContainer>
           <CodeItem data-aos="zoom-in">
