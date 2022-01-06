@@ -14,7 +14,7 @@
 - [x] Rota para projetos
 - [x] componente BannerProjeto
 - [x] Página de Projeto único
-- [ ] Integrar o Prismic CMS em todas as páginas
+- [x] Integrar o Prismic CMS em todas as páginas
 - [ ] ...
 - [ ] ..
 - [ ] ...
