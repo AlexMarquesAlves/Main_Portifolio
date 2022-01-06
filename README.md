@@ -15,7 +15,6 @@
 - [x] componente BannerProjeto
 - [x] Página de Projeto único
 - [x] Integrar o Prismic CMS em todas as páginas
-- [ ] ...
-- [ ] ..
-- [ ] ...
+- [x] Envio de e-mail com Nodemailer (Usando Gmail OAuth2)
+- [x] Aplicar SEO
 - [ ] Deploy
