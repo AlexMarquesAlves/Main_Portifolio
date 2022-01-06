@@ -1,16 +1,22 @@
 import { darken } from 'polished';
 import styled from 'styled-components';
 
-export const Container = styled.section``;
+export const Container = styled.section`
+  width: 100%;
+`;
 
-export const FormContainer = styled.form`
+export const FormContainer = styled.section`
   margin-top: 8rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+
+  > form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
 
   > button {
+    margin-top: 1rem;
     border: none;
     padding: 1rem 2.5rem;
     color: #fff;
@@ -19,20 +25,17 @@ export const FormContainer = styled.form`
     border-radius: 0.5rem;
     background: ${({ theme }) => theme.primary};
     transition: 0.5s;
-    width: fit-content;
 
-    &:disabled {
-      opacity: 0.5;
-    }
-
-    &:not(:disabled):hover {
+    &:hover {
       background: ${({ theme }) => darken(0.05, theme.primary)};
     }
   }
 
   @media (max-width: 700px) {
     margin-top: 5rem;
-    grid-template-columns: 1fr;
+    > form {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 450px) {
@@ -84,14 +87,6 @@ export const TextArea = styled.textarea`
 
   grid-column: 1 / 3;
 
-  &:focus {
-    border-color: ${({ theme }) => theme.primary};
-  }
-
-  &::placeholder {
-    color: ${({ theme }) => theme.primary};
-  }
-
   @media (max-width: 700px) {
     grid-column: 1;
   }
@@ -99,5 +94,13 @@ export const TextArea = styled.textarea`
   @media (max-width: 450px) {
     padding: 1.4rem;
     font-size: 1rem;
+  }
+
+  &:focus {
+    border-color: ${({ theme }) => theme.primary};
+  }
+
+  &::placeholder {
+    color: ${({ theme }) => theme.primary};
   }
 `;

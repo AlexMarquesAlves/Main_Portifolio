@@ -22,13 +22,13 @@ function Projetos({ projetos }: ProjetosProps) {
       <SectionTitle title="Ultimos Projetos" />
 
       <section>
-        {projetos.slice(1, 4).map(projeto => (
+        {projetos.slice(0, 3).map(projeto => (
           <ProjetoItem
             key={projeto.slug}
-            img={projeto.thumbnail}
             title={projeto.title}
             type={projeto.type}
             slug={projeto.slug}
+            img={projeto.thumbnail}
           />
         ))}
       </section>

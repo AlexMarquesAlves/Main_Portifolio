@@ -6,7 +6,6 @@ function Experiencias() {
   return (
     <Container>
       <SectionTitle title="01 Ano" description="de experiência" />
-
       <section>
         <ExperienciaItem
           year="2021"
