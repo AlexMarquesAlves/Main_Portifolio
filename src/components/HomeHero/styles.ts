@@ -9,6 +9,7 @@ export const Container = styled.section`
   margin-top: 5rem;
 
   > img {
+    border-radius: 8rem;
     width: 40rem;
     flex: 1;
   }
@@ -83,6 +84,7 @@ export const InfosContainer = styled.section`
 
 export const CodeItem = styled.pre`
   background: ${({ theme }) => theme.gradient};
+  border-radius: 3rem;
   padding: 2rem;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 300;

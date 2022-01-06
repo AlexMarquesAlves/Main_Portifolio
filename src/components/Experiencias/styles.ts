@@ -27,6 +27,7 @@ export const Container = styled.section`
 
 export const ItemContainer = styled.div`
   background: ${({ theme }) => theme.gradient};
+  border-radius: 3rem;
   padding: 1rem;
   padding-top: 2.5rem;
   height: 20rem;
