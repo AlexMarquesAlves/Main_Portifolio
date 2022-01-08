@@ -24,13 +24,13 @@ function Footer() {
         </button>
         <section>
           <AiOutlineTwitter
-            onClick={() => handleRedirect('https://twitter.com')}
+            onClick={() => handleRedirect('https://twitter.com/meArchi_Duque')}
           />
           <AiOutlineGithub
-            onClick={() => handleRedirect('https://github.com')}
+            onClick={() => handleRedirect('https://github.com/AlexMarquesAlves')}
           />
           <AiFillLinkedin
-            onClick={() => handleRedirect('https://linkedin.com')}
+            onClick={() => handleRedirect('https://www.linkedin.com/in/alexmalves/')}
           />
         </section>
       </div>
