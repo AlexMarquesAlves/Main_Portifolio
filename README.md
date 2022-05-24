@@ -1,4 +1,4 @@
-**<h1 align="center" >Main Portfólio</h1>**
+*<h1 align="center" >Main Portfólio</h1>*
 
 _<h2 align="center">Screenshots</h2>_
 
