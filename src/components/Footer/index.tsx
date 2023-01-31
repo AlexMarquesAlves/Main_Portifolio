@@ -1,7 +1,7 @@
 import {
-  AiOutlineTwitter,
+  AiFillLinkedin,
   AiOutlineGithub,
-  AiFillLinkedin
+  AiOutlineTwitter
 } from 'react-icons/ai';
 import * as Scroll from 'react-scroll';
 import { Container } from './styles';
@@ -27,10 +27,14 @@ function Footer() {
             onClick={() => handleRedirect('https://twitter.com/meArchi_Duque')}
           />
           <AiOutlineGithub
-            onClick={() => handleRedirect('https://github.com/AlexMarquesAlves')}
+            onClick={() =>
+              handleRedirect('https://github.com/AlexMarquesAlves')
+            }
           />
           <AiFillLinkedin
-            onClick={() => handleRedirect('https://www.linkedin.com/in/alexmalves/')}
+            onClick={() =>
+              handleRedirect('https://www.linkedin.com/in/alexmalves/')
+            }
           />
         </section>
       </div>
